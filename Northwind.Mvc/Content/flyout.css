@@ -1,0 +1,27 @@
+﻿.flyout {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  /*0 2px 4px 0 rgba(0,0,0,0.5);*/
+  font-weight: normal;
+}
+.flyout .flyout-body {
+  padding: 15px;
+}
+.flyout .flyout-footer {
+  background-color: #eee;
+  padding: 15px;
+}
+.flyout a {
+  color: #06c;
+}
+.flyout-hover:hover .flyout {
+  display: block;
+}
+/*# sourceMappingURL=flyout.css.map */

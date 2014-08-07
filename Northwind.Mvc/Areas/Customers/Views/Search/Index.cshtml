@@ -1,13 +1,32 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Customers";
 }
 
-<h2>Index</h2>
+@section styles
+{
+    <link href="~/Content/flyout.css" rel="stylesheet" />
+}
 
-<div class="item">
-    Hello
-    <div class="popup">
-        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+<label class="flyout-hover">
+    <input type="text" value="" placeholder="Search for customers"/>
+    <div class="flyout">
+        <div class="flyout-body">
+            <ul class="list-unstyled">
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+                <li>Alec Stewart (Chicago, IL)</li>
+            </ul>
+        </div>
+        <div class="flyout-footer">
+            <a href="#">View all 106 results</a>
+        </div>
     </div>
-</div>
+</label>

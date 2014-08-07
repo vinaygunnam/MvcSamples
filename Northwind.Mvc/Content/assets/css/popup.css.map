@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "popup.css",
-  "sources": [
-    "popup.less"
-  ],
-  "names": [],
-  "mappings": "AAAA;EACI,WAAA;EACA,gBAAA;EACA,WAAA;EACA,mBAAA;EACA,sBAAA;;AALJ,KAOI;EACI,aAAA;EACA,kBAAA;EACA,OAAA;EACA,QAAA;EACA,WAAA;EACA,gBAAA;;EACA,WAAA;EACA,gBAAA;;AAIR,KAAK,MAAO;EACR,cAAA"
-}
