@@ -56,9 +56,11 @@ namespace MvcSamples.Helpers.Extensions
             }
             return html.DropDownListFor(expression, new SelectList(yearList));
         }
+
+
     }
 
-    public abstract class ContainerBase : IDisposable
+    abstract class ContainerBase : IDisposable
     {
         private readonly TextWriter _writer;
 
@@ -72,6 +74,19 @@ namespace MvcSamples.Helpers.Extensions
         public void Dispose()
         {
             OnClosing(_writer);
+        }
+    }
+
+    class HtmlContainer : ContainerBase
+    {
+        public HtmlContainer(HtmlHelper html) : base(html)
+        {
+            
+        }
+
+        protected override void OnClosing(TextWriter writer)
+        {
+            
         }
     }
 

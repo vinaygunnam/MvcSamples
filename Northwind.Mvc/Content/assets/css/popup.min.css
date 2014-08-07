@@ -1,0 +1,1 @@
+﻿.item{float:left;background:#ffc;height:2em;padding:5px 15px 0;border:1px solid #000}.item .popup{display:none;position:absolute;left:0;top:2em;width:100%;margin-top:17px;color:#fff;background:red}.item:hover .popup{display:block}
