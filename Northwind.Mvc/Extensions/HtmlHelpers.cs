@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 
-namespace MvcSamples.Helpers.Extensions
+namespace Northwind.Mvc.Extensions
 {
     public static class HtmlHelpers
     {
