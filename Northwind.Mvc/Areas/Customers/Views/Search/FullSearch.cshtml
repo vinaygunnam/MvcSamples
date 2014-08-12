@@ -1,0 +1,47 @@
+﻿@model Northwind.Mvc.Areas.Customers.ViewModels.FullSearchResult
+@{
+    var title = (Model == null) ? "Search - No results" : string.Format("Search Results for \"{0}\"", Model.SearchText);
+    ViewBag.Title = title;
+}
+
+@if (Model != null && !string.IsNullOrEmpty(Model.SearchText))
+{
+    if (Model.Customers != null && Model.Customers.Any())
+    {
+        <table class="table table-bordered table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model.Customers)
+                {
+                    <tr>
+                        <td>
+                            <a href="@Url.Action("Profile", new { id=customer.Id })" class="btn">
+                                <i class="glyphicon glyphicon-zoom-in"></i> View
+                            </a>
+                        </td>
+                        <td>
+                            @customer.FullName
+                        </td>
+                        <td>
+                            @customer.CompanyName
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h4>No customers found.</h4>
+    }
+}
+else
+{
+    <h2>Nothing to search for!</h2>
+}

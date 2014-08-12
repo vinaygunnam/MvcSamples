@@ -1,0 +1,22 @@
+﻿@model Northwind.Mvc.Areas.Customers.ViewModels.QuickSearchResult
+
+@if (Model != null && Model.Customers != null && Model.Customers.Any())
+{
+    <div class="flyout-body">
+        <ul class="list-unstyled">
+            @foreach (var result in Model.Customers)
+            {
+                <li>@Html.ActionLink(result.FullName, "Profile", "Search", new { id = result.Id }, null)</li>
+            }
+        </ul>
+    </div>
+    <div class="flyout-footer">
+        <a href="@Url.Action("FullSearch", new { id=Model.SearchText })">View all @Model.Total results</a>
+    </div>
+}
+else
+{
+    <div class="flyout-body">
+        <span>No results found.</span>
+    </div>
+}

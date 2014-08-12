@@ -9,24 +9,19 @@
 }
 
 <label class="flyout-hover">
-    <input type="text" value="" placeholder="Search for customers"/>
-    <div class="flyout">
-        <div class="flyout-body">
-            <ul class="list-unstyled">
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-                <li>Alec Stewart (Chicago, IL)</li>
-            </ul>
-        </div>
+    <input type="text" id="txtSearch" value="" placeholder="Search for customers"/>
+    <div class="flyout" id="resultsContainer">
+        
+    </div>
+    <div class="flyout" id="loader">
         <div class="flyout-footer">
-            <a href="#">View all 106 results</a>
+            <img src="~/Content/img-custom/gif-load.gif" /> Loading
         </div>
     </div>
 </label>
+
+@section scripts
+{
+    <script src="~/Scripts/underscore-min.js"></script>
+    <script src="~/Areas/Customers/Scripts/search.js"></script>
+}
