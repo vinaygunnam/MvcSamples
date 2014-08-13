@@ -1,2 +1,2 @@
 [config]
-project = MvcSamples/Northwind.Mvc.csproj
+project = Northwind.Mvc/Northwind.Mvc.csproj
